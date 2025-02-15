@@ -24,10 +24,15 @@ Power considered for design=100 microWatts
 Instead of a passive resistor, a PMOS acts as an active load, functioning as a current source.
 Offers higher gain due to increased output resistance.
 Av = -(gm*rop)
+
 Vdd= 1.8 V
+
 Vgs=0.54 V
+
 Vb= 0.5 V
+
 W=20 u
+
 L=180 nm
 
 ## Simulation Results and Observations
