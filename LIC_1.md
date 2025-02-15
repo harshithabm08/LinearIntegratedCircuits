@@ -54,7 +54,7 @@ With PMOS Load: >200 MHz
 
 Higher bandwidth in PMOS configuration due to improved output impedance.
 ### Power consumption
-### 4. Effect of Aspect Ratio (W/L) on Performance
+### Effect of Aspect Ratio (W/L) on Performance
 Increasing W/L of NMOS increases transconductance , improving gain.
 
 Increasing PMOS W/L increases output resistance, increasing gain but reducing bandwidth due to higher parasitic capacitance.
