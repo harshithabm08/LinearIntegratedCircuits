@@ -1,5 +1,5 @@
 # Abstract
-This report presents an analysis of two MOSFET-based amplifier configurations: a common-source (CS) amplifier with a resistive load () and a common-source amplifier with an active PMOS load. 
+This report presents an analysis of two MOSFET-based amplifier configurations: a common-source (CS) amplifier with a resistive load and a common-source amplifier with an active PMOS load. 
 The study focuses on comparing gain, bandwidth, and power consumption using LTSpice simulations. The channel length is fixed at 180 nm, and the total power dissipation is constrained to 100 µW with . 
 The results show that replacing  with a PMOS current source significantly improves gain and bandwidth, while also affecting power dissipation. The impact of W/L ratio variation on performance is also discussed.
 
@@ -15,6 +15,7 @@ This report compares two configurations:
 The NMOS operates in the saturation region, with acting as the load.
 The gain is determined by the transconductance and the drain resistance:
 Av=-(gm*Rd)
+
 Uses a fixed  as the load of Rd=1K ohm.
 
 Vgs=0.54 V
