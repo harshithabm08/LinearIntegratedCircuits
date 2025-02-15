@@ -10,6 +10,7 @@ This report compares two configurations:
 1. CS Amplifier with a Load Resistor (1K)
 2. CS Amplifier with a PMOS Current Source (Active Load)
 
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/bf92d5dbcc417a9a0b9416e27812f701e5d94a55/configuration_ckt.png)
 ## Circuit configuration and circuit parameters
 The NMOS operates in the saturation region, with acting as the load.
 The gain is determined by the transconductance and the drain resistance:
