@@ -27,6 +27,8 @@ L=180 nm
 
 Power considered for design=100 microWatts
 
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/b41418ad8fcd2c59384f2c9f5bbb354f1383ba56/Op_withRd.png)
+
 Instead of a passive resistor, a PMOS acts as an active load, functioning as a current source.
 Offers higher gain due to increased output resistance.
 Av = -(gm*rop)
