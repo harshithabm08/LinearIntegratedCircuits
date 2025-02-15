@@ -66,6 +66,8 @@ Increasing PMOS W/L increases output resistance, increasing gain but reducing ba
 
 Optimized PMOS W/L = 3× NMOS W/L, ensuring high gain with minimal bandwidth loss.
 
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/654eee6bce788a731e4e66aeeb0282d49b114230/CMOS_Av.png)
+
 # Conclusion
 The PMOS load significantly enhances gain and bandwidth compared to a resistive load.
 
