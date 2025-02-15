@@ -15,10 +15,15 @@ The NMOS operates in the saturation region, with acting as the load.
 The gain is determined by the transconductance and the drain resistance:
 Av=-(gm*Rd)
 Uses a fixed  as the load of Rd=1K ohm.
+
 Vgs=0.54 V
+
 Vdd=1.8 V
+
 W=9 u
+
 L=180 nm
+
 Power considered for design=100 microWatts
 
 Instead of a passive resistor, a PMOS acts as an active load, functioning as a current source.
@@ -38,20 +43,29 @@ L=180 nm
 ## Simulation Results and Observations
 ### Gain Comparison
 With Rd: 2.2 V/V or 6.8 dB
+
 With PMOS Load: 32 V/V or 30 dB
+
 The PMOS current source significantly increases gain, as expected.
 ### Bandwidth Analysis(fH)
 With Rd: ~90 MHz
+
 With PMOS Load: >200 MHz
+
 Higher bandwidth in PMOS configuration due to improved output impedance.
 ### Power consumption
 ### 4. Effect of Aspect Ratio (W/L) on Performance
 Increasing W/L of NMOS increases transconductance , improving gain.
+
 Increasing PMOS W/L increases output resistance, increasing gain but reducing bandwidth due to higher parasitic capacitance.
+
 Optimized PMOS W/L = 3× NMOS W/L, ensuring high gain with minimal bandwidth loss.
 
 # Conclusion
 The PMOS load significantly enhances gain and bandwidth compared to a resistive load.
+
 Power consumption is higher initially, but can be optimized by selecting an appropriate PMOS W/L ratio.
+
 A PMOS W/L of 3× NMOS W/L provides a good balance between gain, bandwidth, and power efficiency.
+
 This study confirms that aspect ratio tuning is critical in optimizing MOSFET amplifier performance.
