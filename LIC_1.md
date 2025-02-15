@@ -50,6 +50,8 @@ With Rd: 2.2 V/V or 6.8 dB
 With PMOS Load: 32 V/V or 30 dB
 
 The PMOS current source significantly increases gain, as expected.
+
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/ac7c1cc6f133346f3111d09f3cff93e784dba017/Op_withPMOS.png)
 ### Bandwidth Analysis(fH)
 With Rd: ~90 MHz
 
