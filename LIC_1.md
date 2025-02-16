@@ -29,6 +29,7 @@ L=180 nm
 Power considered for design=100 microWatts
 
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/b41418ad8fcd2c59384f2c9f5bbb354f1383ba56/Op_withRd.png)
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/ac7c1cc6f133346f3111d09f3cff93e784dba017/Op_withPMOS.png)
 
 Instead of a passive resistor, a PMOS acts as an active load, functioning as a current source.
 Offers higher gain due to increased output resistance.
@@ -52,7 +53,9 @@ With PMOS Load: 32 V/V or 30 dB
 
 The PMOS current source significantly increases gain, as expected.
 
-![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/ac7c1cc6f133346f3111d09f3cff93e784dba017/Op_withPMOS.png)
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/6c507141123cfa8f0ecb6b366735364bc8444e6e/Rd_Av.png)
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/654eee6bce788a731e4e66aeeb0282d49b114230/CMOS_Av.png)
+
 ### Bandwidth Analysis(fH)
 With Rd: ~90 MHz
 
@@ -80,9 +83,6 @@ Increasing W/L of NMOS increases transconductance , improving gain.
 Increasing PMOS W/L increases output resistance, increasing gain but reducing bandwidth due to higher parasitic capacitance.
 
 Optimized PMOS W/L = 3× NMOS W/L, ensuring high gain with minimal bandwidth loss.
-
-![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/654eee6bce788a731e4e66aeeb0282d49b114230/CMOS_Av.png)
-![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/6c507141123cfa8f0ecb6b366735364bc8444e6e/Rd_Av.png)
 
 # Conclusion
 The PMOS load significantly enhances gain and bandwidth compared to a resistive load.
