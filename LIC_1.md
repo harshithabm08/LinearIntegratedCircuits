@@ -60,6 +60,20 @@ With PMOS Load: >200 MHz
 
 Higher bandwidth in PMOS configuration due to improved output impedance.
 ### Power consumption
+The NMOS drain current  is determined by the load resistor :
+I_D = {V_{DD} - V_{out}}/{R_d}
+
+The PMOS acts as a current source, setting a fixed current .
+
+When PMOS W/L is increased:
+
+The PMOS operates at lower overdrive voltage.
+
+Lower  means less voltage drop across NMOS, reducing power dissipation in NMOS.
+
+The circuit becomes more efficient, so power consumption decreases.
+
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/80a3341cfbe1cb2fd163212c18f6a33079c7dab9/Power.png)
 ### Effect of Aspect Ratio (W/L) on Performance
 Increasing W/L of NMOS increases transconductance , improving gain.
 
