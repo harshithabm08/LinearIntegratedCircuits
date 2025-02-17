@@ -57,11 +57,11 @@ The PMOS current source significantly increases gain, as expected.
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/654eee6bce788a731e4e66aeeb0282d49b114230/CMOS_Av.png)
 
 ### Bandwidth Analysis(fH)
-With Rd: ~90 MHz
+With Rd: >1 GHz
 
-With PMOS Load: >200 MHz
+With PMOS Load: <500 MHz
 
-Higher bandwidth in PMOS configuration due to improved output impedance.
+Higher bandwidth in PMOS configuration is decreased due to improved gain. Thus ensuring constant Gain Bandwidth Product.
 ### Power consumption
 The NMOS drain current  is determined by the load resistor :
 I_D = {V_{DD} - V_{out}}/{R_d}
