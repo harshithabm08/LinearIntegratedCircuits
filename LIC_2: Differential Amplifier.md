@@ -11,10 +11,12 @@ The resistor at the source terminal plays a crucial role in setting the bias cur
 These include reduced gain, increased thermal sensitivity, and limited common-mode rejection ratio (CMRR).
 
 To overcome these drawbacks, current sources can be used in place of the resistor. A current source provides a more stable biasing mechanism, improving gain stability, CMRR, and overall performance. 
+![image alt]https://github.com/harshithabm08/LinearIntegratedCircuits/blob/8e7c4231216a9db4699286025d51953e77b410dd/dq.jpeg
+![image alt]https://github.com/harshithabm08/LinearIntegratedCircuits/blob/8aa512cb5c316aadb7b5bc8d02fb24b5fc762d98/wl%20ratio.jpeg
 
 # Procedure (PART-1)
 ## DC Analysis:
-![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/op_RSS.png)
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/8aa512cb5c316aadb7b5bc8d02fb24b5fc762d98/opp_RSS.png)
 To maintain the proper operation of the differential amplifier, both MOSFETs were ensured to be in the saturation region by keeping all key parameters identical for both transistors. 
 This step was crucial in ensuring symmetry and balanced operation, which is essential for stable differential amplification.
 
