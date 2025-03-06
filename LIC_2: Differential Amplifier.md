@@ -14,7 +14,7 @@ To overcome these drawbacks, current sources can be used in place of the resisto
 
 # Procedure (PART-1)
 ## DC Analysis:
-
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/op_RSS.png)
 To maintain the proper operation of the differential amplifier, both MOSFETs were ensured to be in the saturation region by keeping all key parameters identical for both transistors. 
 This step was crucial in ensuring symmetry and balanced operation, which is essential for stable differential amplification.
 
@@ -32,7 +32,7 @@ Once the initial biasing was established, the drain resistor (Rd) was adjusted t
 The exact values of Rd, the source resistance (Rss), and the MOSFET width (W) were slighty modified/made more precise to ensure the amplifier operates within the required constraints.
 
 ## Transient Analysis
-
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/T_RSS.png)
 1. Theoretical vs. Simulated Gain Verification:
 
 The theoretical voltage gain of a single MOSFET stage was first calculated.
@@ -46,7 +46,7 @@ This behavior highlighted the limitations of the amplifier in handling large sig
 With this transient analysis, the amplifier’s differential gain, common-mode swing behavior, and linearity constraints were effectively studied and verified.
 
 ## Frequency Analysis
-
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/AC_RSS.png)
 A small-signal AC analysis was performed to obtain the gain vs. frequency plot (Bode plot).
 The -3 dB bandwidth was determined by identifying the frequency at which the gain drops by 3 dB from its low-frequency value.
 
@@ -62,7 +62,7 @@ To overcome these drawbacks, Rss is often replaced with a constant current sourc
 
 # Procedure (PART-2)
 ## DC Analysis 
-
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/op_ISS.png)
 1. Setting up the circuit:
 
 The source resistance (Rss) was replaced with an ideal current source (Iss) to ensure a constant bias current.
@@ -81,7 +81,7 @@ In the previous case with Rss, the tail current varied due to process and temper
 With Iss, the tail current remains constant, ensuring stable operating points and reducing mismatch effects.
 
 ## Transient Analysis
-
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/T_ISS.png)
 1. Verification of Gain:
 
 A sinusoidal differential input was applied, and the output differential gain was measured.
@@ -94,7 +94,7 @@ The current source provides higher bias stability, allowing a wider common-mode 
 The output remained undistorted within the linear operating range, and distortion only occurred at very high input levels.
 
 ## Frequency Analysis
-
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/AC_ISS.png)
 1. Gain vs. Frequency Analysis:
    
 A Bode plot was generated to observe the frequency response.
@@ -120,7 +120,7 @@ By replacing the source resistance (Rss) with a constant current source (Iss), t
 
 # Procedure (PART-3)
 ## DC Analysis
-
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/op_fet.png)
 1. Setting the DC Operating Point (Q-Point):
 
 The ideal current source was replaced with a MOSFET operating in saturation mode, forming an active current source.
@@ -133,14 +133,14 @@ Compared to Rss, the MOSFET current source offers better gain and bias stability
 Compared to the ideal current source, the MOSFET introduces some non-idealities, such as finite output impedance and temperature variations.
 
 ## Transient Analysis 
-
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/T_FET.png)
 1. Gain Verification:
 
 A differential input signal was applied, and the output voltage swing was measured.
 The gain was slightly similar to the design with an ideal current source.
 
 ## Frequency Response (Bandwidth & Stability Analysis)
-
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/AC_FET.png)
 1. Gain vs Frequency:
 
 The Bode plot was generated, showing that the -3 dB bandwidth was lower than the ideal current source case but higher than the Rss case.
