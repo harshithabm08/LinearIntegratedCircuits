@@ -47,6 +47,8 @@ This behavior highlighted the limitations of the amplifier in handling large sig
 
 With this transient analysis, the amplifier’s differential gain, common-mode swing behavior, and linearity constraints were effectively studied and verified.
 
+#### Gain:(Differential output)/(Differential input)= 9 V/V
+
 ## Frequency Analysis
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/AC_RSS.png)
 A small-signal AC analysis was performed to obtain the gain vs. frequency plot (Bode plot).
@@ -95,6 +97,8 @@ The input and output common-mode swings were analyzed.
 The current source provides higher bias stability, allowing a wider common-mode swing compared to Rss.
 The output remained undistorted within the linear operating range, and distortion only occurred at very high input levels.
 
+#### Gain:(Differential output)/(Differential input)= 9.06 V/V
+
 ## Frequency Analysis
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/AC_ISS.png)
 1. Gain vs. Frequency Analysis:
@@ -140,6 +144,8 @@ Compared to the ideal current source, the MOSFET introduces some non-idealities,
 
 A differential input signal was applied, and the output voltage swing was measured.
 The gain was slightly similar to the design with an ideal current source.
+
+#### Gain:(Differential output)/(Differential input)= 9.094 V/V
 
 ## Frequency Response (Bandwidth & Stability Analysis)
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/AC_FET.png)
