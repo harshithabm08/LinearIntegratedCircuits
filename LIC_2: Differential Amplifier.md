@@ -54,10 +54,9 @@ The presence of Rss reduces the bandwidth. It also affects the common-mode rejec
 As frequency increases, the gain drops due to the dominant pole behavior, and at very high frequencies, the circuit exhibits a roll-off.
 
 Replacing Rss with a current source (using a MOSFET as an active load) increases output impedance, improving bandwidth and gain.
-# Conclusion
+## Conclusion
 
 # Procedure (PART-2)
-
 ## DC Analysis 
 
 1. Setting up the circuit:
@@ -102,3 +101,78 @@ By replacing the source resistance (Rss) with a constant current source (Iss), t
 
 5. Reduced distortion, ensuring improved linearity over a wider range of input signals.
 
+# Procedure (PART-3)
+## DC Analysis
+
+1. Setting the DC Operating Point (Q-Point):
+
+The ideal current source was replaced with a MOSFET operating in saturation mode, forming an active current source.
+The tail current was set as:
+The drain resistances (Rd) were adjusted to maintain a stable common-mode voltage.
+
+2. Comparison with Previous Implementations:
+
+Compared to Rss, the MOSFET current source offers better gain and bias stability.
+Compared to the ideal current source, the MOSFET introduces some non-idealities, such as finite output impedance and temperature variations.
+
+## Transient Analysis 
+
+1. Gain Verification:
+
+A differential input signal was applied, and the output voltage swing was measured.
+The gain was slightly similar to the design with an ideal current source.
+
+## Frequency Response (Bandwidth & Stability Analysis)
+
+1. Gain vs Frequency:
+
+The Bode plot was generated, showing that the -3 dB bandwidth was lower than the ideal current source case but higher than the Rss case.
+
+2. High-Frequency Behavior:
+
+The MOSFET’s parasitic capacitances affected the gain roll-off at high frequencies.
+The dominant pole was at a lower frequency compared to the ideal current source case, causing slightly lower bandwidth.
+Despite this, performance was still significantly better than the resistor-based design.
+
+## Conclusion
+
+By replacing the ideal current source (Iss) with a MOSFET-based active current source, the differential amplifier exhibited the following key observations:
+
+1. Higher differential gain than the resistor-based design but slightly lower than the ideal current source case.
+
+2. Slightly degraded common-mode rejection (CMRR) due to the finite impedance of the MOSFET current source.
+
+3. Improved bias stability compared to Rss but some dependence on MOSFET parameters like channel length modulation and temperature variations.
+
+4. Reduced bandwidth compared to the ideal current source case due to the finite output impedance and parasitic effects.
+
+5. More practical implementation, making it suitable for real-world integrated circuit designs.
+
+# There is still more to go!!
+
+In practical integrated circuit (IC) implementations, using resistors at the drain of the differential amplifier is not ideal due to the following reasons:
+
+Large area consumption: Resistors require significant chip area, making integration difficult in VLSI circuits where millions to billions of transistors are used.
+
+Process variations: Resistors are more sensitive to fabrication variations, affecting performance consistency.
+
+Limited output resistance: The resistance value is fixed and not tunable dynamically, which can limit the design flexibility.
+
+
+### Replacing Drain Resistors with PMOS Current Sources
+
+To overcome these limitations, the drain resistors (Rd) are replaced with PMOS transistors operating in the saturation region. These PMOS devices act as active load current sources, improving overall circuit performance.
+
+4.2 Key Parameters of PMOS Current Sources:
+
+The small-signal output resistance (ro) of a PMOS transistor is significantly higher than a resistor, which helps in achieving a higher voltage gain.
+
+PMOS transistors require proper biasing through a current mirror, ensuring a stable and tunable drain current.
+
+Unlike resistors, current sources offer programmable bias currents, allowing for adaptive gain control in analog ICs.
+
+PMOS transistors scale well with CMOS fabrication processes, making them suitable for nanometer-scale technologies.
+
+#### Conclusion
+
+By replacing drain resistors with PMOS current sources, the differential amplifier achieves higher gain, better stability, and improved integration in modern ICs. This step marks the transition from basic differential amplifiers to fully integrated, high-performance analog circuits, which are widely used in operational amplifiers, analog front-end circuits, and mixed-signal designs.
