@@ -56,12 +56,29 @@ As frequency increases, the gain drops due to the dominant pole behavior, and at
 Replacing Rss with a current source (using a MOSFET as an active load) increases output impedance, improving bandwidth and gain.
 ## Conclusion
 
+The differential amplifier with a source resistor (Rss) is simple and effective, but it has limitations in gain, common-mode rejection, and high-frequency performance. While it provides some stability, it is not ideal for practical IC implementations due to power dissipation, bias current variations, and frequency limitations.
+
+To overcome these drawbacks, Rss is often replaced with a constant current source (Iss), which offers higher impedance, improved gain, and better common-mode rejection. This transition is essential for high-performance analog circuit design and is a key step toward practical integrated differential amplifier implementations.
+
 # Procedure (PART-2)
 ## DC Analysis 
 
 1. Setting up the circuit:
 
 The source resistance (Rss) was replaced with an ideal current source (Iss) to ensure a constant bias current.
+The MOSFETs were biased to ensure operation in the saturation region, where:
+Id=1/2*Kn* (Vov)^2 
+The drain resistances (Rd) were adjusted to set the desired output common-mode voltage.
+
+2. Current Matching and Stability:
+
+The constant current source ensures equal current division between the two MOSFETs, improving matching and symmetry.
+This results in better bias stability and reduces dependence on process variations.
+
+3. Comparison with Resistor Biasing:
+
+In the previous case with Rss, the tail current varied due to process and temperature changes.
+With Iss, the tail current remains constant, ensuring stable operating points and reducing mismatch effects.
 
 ## Transient Analysis
 
@@ -163,7 +180,7 @@ Limited output resistance: The resistance value is fixed and not tunable dynamic
 
 To overcome these limitations, the drain resistors (Rd) are replaced with PMOS transistors operating in the saturation region. These PMOS devices act as active load current sources, improving overall circuit performance.
 
-4.2 Key Parameters of PMOS Current Sources:
+#### Key Parameters of PMOS Current Sources:
 
 The small-signal output resistance (ro) of a PMOS transistor is significantly higher than a resistor, which helps in achieving a higher voltage gain.
 
@@ -173,6 +190,6 @@ Unlike resistors, current sources offer programmable bias currents, allowing for
 
 PMOS transistors scale well with CMOS fabrication processes, making them suitable for nanometer-scale technologies.
 
-#### Conclusion
+### Conclusion
 
 By replacing drain resistors with PMOS current sources, the differential amplifier achieves higher gain, better stability, and improved integration in modern ICs. This step marks the transition from basic differential amplifiers to fully integrated, high-performance analog circuits, which are widely used in operational amplifiers, analog front-end circuits, and mixed-signal designs.
