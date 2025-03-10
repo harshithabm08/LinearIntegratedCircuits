@@ -210,3 +210,4 @@ To overcome these limitations, the drain resistors (Rd) are replaced with PMOS t
 ### Conclusion
 
 By replacing drain resistors with PMOS current sources, the differential amplifier achieves higher gain, better stability, and improved integration in modern ICs. This step marks the transition from basic differential amplifiers to fully integrated, high-performance analog circuits, which are widely used in operational amplifiers, analog front-end circuits, and mixed-signal designs.
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/bc28fd512c1f07f5a2651224af6627245b6bac35/PMOS_DA.png)
