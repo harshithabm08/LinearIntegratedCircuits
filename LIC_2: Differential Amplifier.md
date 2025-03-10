@@ -197,15 +197,15 @@ By replacing the ideal current source (Iss) with a MOSFET-based active current s
 
 To overcome these limitations, the drain resistors (Rd) are replaced with PMOS transistors operating in the saturation region. These PMOS devices act as active load current sources, improving overall circuit performance.
 
-#### Key Parameters of PMOS Current Sources:
+#### _Key Parameters of PMOS Current Sources:_
 
-The small-signal output resistance (ro) of a PMOS transistor is significantly higher than a resistor, which helps in achieving a higher voltage gain.
+- The small-signal output resistance (ro) of a PMOS transistor is significantly higher than a resistor, which helps in achieving a higher voltage gain.
 
-PMOS transistors require proper biasing through a current mirror, ensuring a stable and tunable drain current.
+- PMOS transistors require proper biasing through a current mirror, ensuring a stable and tunable drain current.
 
-Unlike resistors, current sources offer programmable bias currents, allowing for adaptive gain control in analog ICs.
+- Unlike resistors, current sources offer programmable bias currents, allowing for adaptive gain control in analog ICs.
 
-PMOS transistors scale well with CMOS fabrication processes, making them suitable for nanometer-scale technologies.
+- PMOS transistors scale well with CMOS fabrication processes, making them suitable for nanometer-scale technologies.
 
 ### Conclusion
 
