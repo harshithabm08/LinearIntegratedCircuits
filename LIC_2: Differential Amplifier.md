@@ -1,4 +1,4 @@
-# **Absrtact**
+# Absrtact
 ---
 _This report presents the analysis and simulation of a differential pair amplifier with a resistor at the source. The primary objective of this experiment is to examine the behavior of the amplifier by varying different parameters and evaluating its stability in terms of differential gain, common-mode gain, and overall frequency response._
 
@@ -67,6 +67,8 @@ The differential amplifier with a source resistor (Rss) is simple and effective,
 
 To overcome these drawbacks, Rss is often replaced with a constant current source (Iss), which offers higher impedance, improved gain, and better common-mode rejection. This transition is essential for high-performance analog circuit design and is a key step toward practical integrated differential amplifier implementations.
 
+---
+
 # Procedure (PART-2)
 ## DC Analysis 
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/op_ISS.png)
@@ -127,6 +129,8 @@ By replacing the source resistance (Rss) with a constant current source (Iss), t
 
 5. Reduced distortion, ensuring improved linearity over a wider range of input signals.
 
+---
+
 # Procedure (PART-3)
 ## DC Analysis
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/op_fet.png)
@@ -175,7 +179,8 @@ By replacing the ideal current source (Iss) with a MOSFET-based active current s
 4. Reduced bandwidth compared to the ideal current source case due to the finite output impedance and parasitic effects.
 
 5. More practical implementation, making it suitable for real-world integrated circuit designs.
-   
+
+---
 
 # There is still more to go!!
 
