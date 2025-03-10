@@ -102,7 +102,7 @@ The input and output common-mode swings were analyzed.
 The current source provides higher bias stability, allowing a wider common-mode swing compared to Rss.
 The output remained undistorted within the linear operating range, and distortion only occurred at very high input levels.
 
-#### Gain:(Differential output)/(Differential input)= 9.06 V/V
+#### `Gain:(Differential output)/(Differential input)= 9.06 V/V`
 
 ## Frequency Analysis
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/AC_ISS.png)
@@ -152,7 +152,7 @@ Compared to the ideal current source, the MOSFET introduces some non-idealities,
 A differential input signal was applied, and the output voltage swing was measured.
 The gain was slightly similar to the design with an ideal current source.
 
-#### Gain:(Differential output)/(Differential input)= 9.094 V/V
+#### `Gain:(Differential output)/(Differential input)= 9.094 V/V`
 
 ## Frequency Response (Bandwidth & Stability Analysis)
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/AC_FET.png)
@@ -184,13 +184,13 @@ By replacing the ideal current source (Iss) with a MOSFET-based active current s
 
 # There is still more to go!!
 
-In practical integrated circuit (IC) implementations, using resistors at the drain of the differential amplifier is not ideal due to the following reasons:
+* In practical integrated circuit (IC) implementations, using resistors at the drain of the differential amplifier is not ideal due to the following reasons:
 
-Large area consumption: Resistors require significant chip area, making integration difficult in VLSI circuits where millions to billions of transistors are used.
+* Large area consumption: Resistors require significant chip area, making integration difficult in VLSI circuits where millions to billions of transistors are used.
 
-Process variations: Resistors are more sensitive to fabrication variations, affecting performance consistency.
+* Process variations: Resistors are more sensitive to fabrication variations, affecting performance consistency.
 
-Limited output resistance: The resistance value is fixed and not tunable dynamically, which can limit the design flexibility.
+* Limited output resistance: The resistance value is fixed and not tunable dynamically, which can limit the design flexibility.
 
 
 ### Replacing Drain Resistors with PMOS Current Sources
