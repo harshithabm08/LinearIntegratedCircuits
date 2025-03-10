@@ -1,6 +1,6 @@
-# Absrtact
-This report presents the analysis and simulation of a differential pair amplifier with a resistor at the source. The primary objective of this experiment is to examine the behavior of the amplifier 
-by varying different parameters and evaluating its stability in terms of differential gain, common-mode gain, and overall frequency response.
+# **Absrtact
+---
+_This report presents the analysis and simulation of a differential pair amplifier with a resistor at the source. The primary objective of this experiment is to examine the behavior of the amplifier by varying different parameters and evaluating its stability in terms of differential gain, common-mode gain, and overall frequency response._
 
 # Introduction
 A differential amplifier is a fundamental building block in analog circuit design, commonly used for signal amplification while rejecting common-mode noise. 
@@ -10,7 +10,8 @@ The basic structure of a differential amplifier consists of two transistors (MOS
 The resistor at the source terminal plays a crucial role in setting the bias current and improving linearity, but it introduces certain limitations. 
 These include reduced gain, increased thermal sensitivity, and limited common-mode rejection ratio (CMRR).
 
-To overcome these drawbacks, current sources can be used in place of the resistor. A current source provides a more stable biasing mechanism, improving gain stability, CMRR, and overall performance. 
+To overcome these drawbacks, current sources can be used in place of the resistor. A current source provides a more stable biasing mechanism, improving gain stability, CMRR, and overall performance.
+
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/8e7c4231216a9db4699286025d51953e77b410dd/dq.jpeg)
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/8aa512cb5c316aadb7b5bc8d02fb24b5fc762d98/wl%20ratio.jpeg)
 
@@ -47,7 +48,9 @@ This behavior highlighted the limitations of the amplifier in handling large sig
 
 With this transient analysis, the amplifier’s differential gain, common-mode swing behavior, and linearity constraints were effectively studied and verified.
 
-#### Gain:(Differential output)/(Differential input)= 9 V/V
+#### `Gain:(Differential output)/(Differential input)= 9 V/V`
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/9c5b03e92a8fd571923efa5839ac03142039d839/symm-swing.jpeg)
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/9c5b03e92a8fd571923efa5839ac03142039d839/vicm.jpeg)
 
 ## Frequency Analysis
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/51b1e2c656030e3764c4903a2ca119ede8c3fa30/AC_RSS.png)
@@ -71,7 +74,7 @@ To overcome these drawbacks, Rss is often replaced with a constant current sourc
 
 The source resistance (Rss) was replaced with an ideal current source (Iss) to ensure a constant bias current.
 The MOSFETs were biased to ensure operation in the saturation region, where:
-Id=1/2*Kn* (Vov)^2 
+**Id=1/2*Kn* (Vov)^2
 The drain resistances (Rd) were adjusted to set the desired output common-mode voltage.
 
 2. Current Matching and Stability:
@@ -172,6 +175,7 @@ By replacing the ideal current source (Iss) with a MOSFET-based active current s
 4. Reduced bandwidth compared to the ideal current source case due to the finite output impedance and parasitic effects.
 
 5. More practical implementation, making it suitable for real-world integrated circuit designs.
+   
 
 # There is still more to go!!
 
