@@ -1,4 +1,4 @@
-# **Absrtact
+# **Absrtact**
 ---
 _This report presents the analysis and simulation of a differential pair amplifier with a resistor at the source. The primary objective of this experiment is to examine the behavior of the amplifier by varying different parameters and evaluating its stability in terms of differential gain, common-mode gain, and overall frequency response._
 
