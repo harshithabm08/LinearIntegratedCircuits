@@ -13,7 +13,7 @@ Advantages of Current Mirrors
 * Reduces power consumption compared to resistor biasing.
 * Helps in temperature compensation for analog circuits.
 
-Effect of Current Mirrors on Circuit Performanc8
+Effect of Current Mirrors on Circuit Performance
 
 * Gain: Ensures stable tail current, improving amplifier gain.
 * Stability: Reduces variations in bias current.
@@ -48,12 +48,12 @@ Design Considerations for High Accuracy
 
 ---
 
-# 4. Differential Amplifier with NMOS Current Mirror
+# Differential Amplifier with NMOS Current Mirror
 
 A differential amplifier is a crucial building block in analog circuits, amplifying the difference between two input signals. To function efficiently, 
 it requires a precise bias current, which is where the NMOS current mirror is used.
 
-How the Current Mirror Acts as a Bias Generator?
+#### How the Current Mirror Acts as a Bias Generator?
 
 The NMOS current mirror provides a constant current as the tail current source for the differential amplifier.
 This ensures that the differential pair operates in saturation, preventing variations in common-mode signals from affecting circuit performance.
@@ -88,6 +88,9 @@ Current mirrors are fundamental in integrated circuit (IC) design because:
 ---
 
 # Conclusion
+
+_While the theoretical design of the current mirror was based on standard process parameters, slight deviations in overdrive voltage (Vov), transconductance parameter (kn’), and transistor matching can lead to small discrepancies between calculated and simulated values. These variations arise due to process-dependent factors, such as channel length modulation, temperature effects, and second-order MOSFET characteristics, which were not fully accounted for in the initial assumptions. Additionally, practical implementation in LTSpice may reflect non-idealities such as device mismatches and parasitic effects, contributing to minor deviations in gain and biasing accuracy. Despite these variations, the overall design remains robust and demonstrates the expected behavior of a current mirror in stabilizing the differential amplifier’s tail current._
+
 
 Current mirrors play a crucial role in biasing circuits, especially in differential amplifiers, ensuring stable operation with minimal variation. 
 By implementing NMOS current mirrors as bias voltage generators, differential amplifiers achieve better gain, stability, and power efficiency, making them a key component in modern analog IC design.
