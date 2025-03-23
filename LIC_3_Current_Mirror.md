@@ -19,6 +19,10 @@ Effect of Current Mirrors on Circuit Performance
 * Stability: Reduces variations in bias current.
 * Bandwidth: A high output impedance mirror improves frequency response.
 
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/956265d73497b6b407d9ba6d11ad3b08e34759a3/Current-Mirror-Circuit.png)
+
+---
+
 # PMOS Current Mirror Analysis
 
 Design Parameters:
@@ -33,6 +37,9 @@ Width-to-Length Ratio was calculated using the MOSFET saturation current equatio
 If L = 180nm, then:
 W = 2.213 um
 
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/9496c5f32e88c07bcffb8bc416f98652e906205c/CM_P_OP.png)
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/9496c5f32e88c07bcffb8bc416f98652e906205c/CM_P.png)
+
 ---
 
 # NMOS Current Mirror for Design
@@ -45,6 +52,8 @@ Working Principle
 Design Considerations for High Accuracy
 * Use longer channel length (L) to minimize channel length modulation (λ).
 * Ensure both transistors are in saturation region for better mirroring accuracy.
+
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/9496c5f32e88c07bcffb8bc416f98652e906205c/CM_N.png)
 
 ---
 
@@ -74,6 +83,9 @@ The stability of bias current improves gain, reduces offset, and enhances overal
 * Requires proper transistor matching for accurate current mirroring.
 * Process variations can slightly affect performance if not designed correctly.
 * Additional transistors increase circuit complexity.
+
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/9496c5f32e88c07bcffb8bc416f98652e906205c/CMDA_OP.png)
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/9496c5f32e88c07bcffb8bc416f98652e906205c/CMDA_T.png)
 
 ---
 
