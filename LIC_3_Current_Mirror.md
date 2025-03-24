@@ -88,6 +88,8 @@ The stability of bias current improves gain, reduces offset, and enhances overal
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/9496c5f32e88c07bcffb8bc416f98652e906205c/CMDA_T.png)
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/c8588c5b6b910d538a7be503224e7863f1fc6855/CM_AC.png)
 
+The integration of the NMOS current mirror as a biasing source in the differential amplifier significantly improved the gain, increasing it from *9 to 20*. This increase is due to the higher output resistance of the current mirror, which enhances the effective gain of the amplifier by improving the common-mode rejection and ensuring a more stable tail current. _However, as expected, the bandwidth decreased due to the inverse relationship between gain and bandwidth, maintaining a nearly constant gain-bandwidth product (GBW)_. The AC analysis further confirmed this trade-off, showing a lower -3dB bandwidth compared to the previous setup without the current mirror, aligning with theoretical expectations.
+
 ---
 
 # Practical Importance in IC Design
