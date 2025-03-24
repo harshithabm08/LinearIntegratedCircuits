@@ -86,6 +86,7 @@ The stability of bias current improves gain, reduces offset, and enhances overal
 
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/9496c5f32e88c07bcffb8bc416f98652e906205c/CMDA_OP.png)
 ![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/9496c5f32e88c07bcffb8bc416f98652e906205c/CMDA_T.png)
+![image alt](https://github.com/harshithabm08/LinearIntegratedCircuits/blob/c8588c5b6b910d538a7be503224e7863f1fc6855/CM_AC.png)
 
 ---
 
