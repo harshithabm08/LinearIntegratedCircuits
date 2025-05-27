@@ -47,7 +47,7 @@ Working Principle
   
 * Trigger Condition: Needs a clean, fast falling-edge or rising-edge pulse to initiate the output.
 
-![ckt](https://github.com/user-attachments/assets/cf6ec460-07b5-4296-b757-4ab81d5ac240)
+![ckt_new](https://github.com/user-attachments/assets/6ca2fef8-55d8-4b86-8fc3-00f55a955b20)
 
 ## Circuit Diagram and Output waveforms
 
